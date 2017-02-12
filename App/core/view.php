@@ -2,9 +2,10 @@
 //Define View
 class View
 {
-  function generate()
+  function generate($content_view, $template_view, $data = null)
   {
-    //Function add view 
+    //Function add template view
+    include 'App/views/'.$template_view;
   }
 }
  ?>

@@ -25,8 +25,8 @@ class Route
     }
 
     //Add prefixes
-    $model_name = "model_".$controller_name;
-    $controller_name = "controller_".$controller_name;
+    $model_name = "Model_".$controller_name;
+    $controller_name = "Controller_".$controller_name;
     $action_name = "action_".$action_name;
 
     //Search model
@@ -40,9 +40,9 @@ class Route
     //Search controller
     $controller_file = strtolower($controller_name).'.php';
     $controller_path = "App/controllers/".$controller_file;
-    if(file_exist($controller_path))
+    if(file_exists($controller_path))
     {
-      include("App/controllers/".$controller_file);
+      include ("App/controllers/".$controller_file);
     }
     else
     {

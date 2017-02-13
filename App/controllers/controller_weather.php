@@ -5,8 +5,8 @@ class Controller_Weather extends Controller
 {
   function __construct()
   {
-    $this->model->new Model_weather();
-    $this->view->new View();
+    $this->model = new Model_Weather();
+    $this->view = new View();
   }
   function action_index()
   {

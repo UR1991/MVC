@@ -64,7 +64,7 @@ class Route
 
   //Show this function if error
   function ErrorPage404()
-  {
+  {echo "string";
     $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
     header('HTTP/1.1 404 Not Found');
 		header("Status: 404 Not Found");
